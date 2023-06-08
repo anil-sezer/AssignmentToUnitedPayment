@@ -1,7 +1,7 @@
 # Services
 ###### API Endpoints that I will write
 
-- [ ] Customer - POST (Save a customer card info)
+- [ ] Buyer - POST (Save a customer card info)
 1. Save Customer info to DB.
 2. Check IdentityNo from https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx
 3. Update check result to DB.
@@ -132,11 +132,6 @@ return hash;
 # Structure
 Project: UPay (United Payment)
 
-Web.Api: UPay.Web.Api
-    |-> Controllers: UPay.Web.Api.Controllers
-        |-> CustomerController
-        |-> PaymentController
-
 Domain: UPay.Domain
     |-> Entities: UPay.Domain.Entities
         |-> Customer
@@ -145,15 +140,22 @@ Domain: UPay.Domain
 DataAccess: UPay.DataAccess
     |-> Migrations: UPay.DataAccess.Migrations
 
+Web.Api: UPay.Web.Api
+    |-> Controllers: UPay.Web.Api.Controllers
+    |-> CustomerController
+    |-> PaymentController
+
 Application: UPay.Application
     |
-    |-> CustomerService
-    |   |-> CustomerAppService + ICustomerAppService + Dtos
-    |-> CustomerService
-    |   |-> IdentityVerificationService + IIdentityVerificationService + Dtos
+    |-> BuyerService
+    |   |-> BuyerAppService + IBuyerAppService + Dtos
+    |-> IdentityVerificationService
+    |   |-> IdentityVerificationAppService + IIdentityVerificationService + Dtos
     |
     |-> PaymentService
         |-> PaymentAppService + IPaymentAppService + Dtos
+
+Oh, and also the tests
 
 3 Docker containers:
     - Web.Api
