@@ -2,7 +2,7 @@ namespace UPay.Domain.Helpers;
 
 public static class EnumHelper // todo: Move to Utilities project
 {
-    public static string GetEnumValuesString<TEnum>()
+    public static string GetEnumValuesString<TEnum>() // todo: Is it possible to make this an Enum extension method?
     {
         if (!typeof(TEnum).IsEnum)
         {

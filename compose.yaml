@@ -1,0 +1,48 @@
+version: '3.8'
+
+## Didn't had time to set up the containers, but this was the idea:
+services:
+  api:
+    hostname: api
+    container_name: api
+    build:
+      dockerfile: images/api/Dockerfile
+      context: .
+    restart: "always"
+    ports:
+      - "8000:5000"
+    networks:
+      - common
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+  db:
+    build:
+      dockerfile: images/postgres_sql/Dockerfile
+      context: .
+    restart: "always"
+    hostname: db
+    container_name: db
+    ports:
+      - "5432:5432"
+    networks:
+      - common
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=placeholder
+      - POSTGRES_DB=test_db
+      
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - common
+
+networks:
+  common:
+    driver: bridge

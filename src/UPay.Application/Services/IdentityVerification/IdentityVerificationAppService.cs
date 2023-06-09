@@ -1,6 +1,7 @@
 using System.Text;
 using Serilog;
 using UPay.Application.Boilerplate;
+using UPay.Domain.Consts;
 
 namespace UPay.Application.Services.IdentityVerification;
 
@@ -32,6 +33,7 @@ public class IdentityVerificationAppService : AppServiceBase, IIdentityVerificat
     private const string NegativeResult = "<TCKimlikNoDogrulaResult>false</TCKimlikNoDogrulaResult>";
     private const string PositiveResult = "<TCKimlikNoDogrulaResult>true</TCKimlikNoDogrulaResult>";
 
+    // todo: Bunu thirdPartyApiCallHandler'a taşı, oradan çağır
     public async Task<bool> ValidateTcknAsync(string name, string surname, DateTime birthday, long tckn)
     {
         var request = RequestBase
@@ -39,9 +41,9 @@ public class IdentityVerificationAppService : AppServiceBase, IIdentityVerificat
             .Replace(Surname, surname)
             .Replace(Tckn, tckn.ToString())
             .Replace(BirthYear, birthday.Year.ToString());
-        
+
         var httpContent = new StringContent(request, Encoding.UTF8, "application/soap+xml");
-        var response = await _httpClient.PostAsync("https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx", httpContent);
+        var response = await _httpClient.PostAsync(ThirdPartyApiSettings.Url_TcknVerification, httpContent);
         var responseContent = await response.Content.ReadAsStringAsync();
 
         Log.Information("TCKN validation service response: {Response}", responseContent);

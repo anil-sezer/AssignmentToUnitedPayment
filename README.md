@@ -1,12 +1,12 @@
 # Services
 ###### API Endpoints that I will write
 
-- [ ] Buyer - POST (Save a customer card info)
+- [x] Buyer - POST (Save a customer card info)
 1. Save Customer info to DB.
 2. Check IdentityNo from https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx
 3. Update check result to DB.
 
-- [ ] Sell - POST (Sell a product)
+- [ ] Payment - POST (Process a payment)
 1. Check cache for a token.
 2. If no token, than login to ppgsec and get token and cache it. (Did it in Postman)
 3. Sell product
@@ -84,6 +84,29 @@ Response:
   "responseMessage": "İşlem Başarılı"
 }
 ```
+When 'token' JWT is decoded:
+```json
+{
+  "Lang": "TR",
+  "Email": "murat.karayilan@dotto.com.tr",
+  "UserId": "441",
+  "MemberId": "1",
+  "MemberCode": "BO",
+  "MerchantId": "215",
+  "MerchantNumber": "215",
+  "UserStatus": "A",
+  "ChangePasswordRequired": "0",
+  "PasswordStatus": "U",
+  "UserRoles": "1",
+  "RoleScore": "900",
+  "TicketType": "API",
+  "UserType": "API_USER",
+  "nbf": 1686328658,
+  "exp": 1704328658,
+  "iat": 1686328658
+}
+```
+
 
 ##### Payment - POST
 https://ppgpayment-test.birlesikodeme.com:20000/api/ppg/Payment/NoneSecurePayment
@@ -162,3 +185,5 @@ Application:
 - Adminer (For easy db management)
 
 Rest of it will be designed on the fly
+
+# Other others

@@ -6,7 +6,7 @@ namespace UPay.Domain.Entities;
 public class Transaction : EntityBase
 {
     public Guid CustomerId { get; set; }
-    public Guid OrderId { get; set; }
+    public long OrderId { get; set; }
     public TransactionType TypeId { get; set; }
     public decimal Amount { get; set; }
     [CreditCard] // todo: Easier than adding FluentValidation or regex
