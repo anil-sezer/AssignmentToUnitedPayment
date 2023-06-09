@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 using UPay.Application.Boilerplate;
+using UPay.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,25 @@ Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .WriteTo.Console()
     .CreateLogger();
+
+// var configuration = new ConfigurationBuilder()
+//     .SetBasePath(builder.Environment.ContentRootPath)
+//     .AddJsonFile("appsettings.json")
+//     .Build();
+//
+// var connectionString = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") != null ? 
+//     configuration.GetConnectionString("DefaultConnection") :
+//     configuration.GetConnectionString("DefaultConnectionLocal");
+
+builder.Services.AddDbContext<UPayDbContext>(options =>
+        options
+            .UseInMemoryDatabase("UPayDb")
+            // .UseNpgsql(connectionString)
+            .UseSnakeCaseNamingConvention()
+            .EnableSensitiveDataLogging() // todo: Only for development
+            .EnableDetailedErrors() // todo: Only for development
+);
+
 
 var app = builder.Build();
 
