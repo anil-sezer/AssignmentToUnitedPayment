@@ -1,7 +1,7 @@
 using System.Net;
-using UPay.Application.Generic.Dto;
+using UPay.Application.Boilerplate.Dto;
 
-namespace UPay.Application.Generic;
+namespace UPay.Application.Boilerplate;
 
 public class AppServiceBase : IAppServiceBase
 {

@@ -1,4 +1,4 @@
-namespace UPay.Application.Generic.Dto;
+namespace UPay.Application.Boilerplate.Dto;
 
 public class AppServiceListResult<TListOutput> : AppServiceResult where TListOutput : class
 {

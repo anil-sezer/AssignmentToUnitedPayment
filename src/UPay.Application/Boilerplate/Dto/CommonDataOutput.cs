@@ -1,4 +1,4 @@
-namespace UPay.Application.Generic.Dto;
+namespace UPay.Application.Boilerplate.Dto;
 
 public class CommonDataOutput
 {

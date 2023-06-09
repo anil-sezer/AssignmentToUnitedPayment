@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace UPay.Application.Generic.Dto;
+namespace UPay.Application.Boilerplate.Dto;
 
 public class AppServiceResult
 {
