@@ -1,7 +1,7 @@
 using System.Net;
-using UPay.Application.Dto;
+using UPay.Application.Generic.Dto;
 
-namespace UPay.Application;
+namespace UPay.Application.Generic;
 
 public class AppServiceBase : IAppServiceBase
 {
@@ -38,7 +38,7 @@ public class AppServiceBase : IAppServiceBase
     {
         return new AppServiceDataResult<TOutput>
         {
-            Data = null!,
+            Data = null,
             Succeed = false,
             ErrorMessage = errorMessage,
             HttpStatusCode = httpStatusCode
@@ -82,7 +82,7 @@ public class AppServiceBase : IAppServiceBase
         return new AppServiceDataListResult<TDataOutput, TListOutput>
         {
             Items = null,
-            Data = null!,
+            Data = null,
             Succeed = false,
             ErrorMessage = errorMessage,
             HttpStatusCode = httpStatusCode

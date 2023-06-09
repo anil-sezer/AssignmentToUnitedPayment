@@ -1,4 +1,4 @@
-namespace UPay.Application.Dto;
+namespace UPay.Application.Generic.Dto;
 
 public class AppServiceDataListResult<TDataOutput, TListOutput> : AppServiceResult where TDataOutput : class where TListOutput : class
 {
