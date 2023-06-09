@@ -131,30 +131,30 @@ return hash;
 # Structure
 Project: UPay (United Payment)
 
-Domain: UPay.Domain
-|-> Entities: UPay.Domain.Entities
-|-> Customer
-|-> Transaction
+**Used yaml template to show the structure clearly in both editor & display**
+```yaml
+Domain: 
+  Entities:
+    - Customer.cs
+    - Transaction.cs
 
-DataAccess: UPay.DataAccess
-|-> Migrations: UPay.DataAccess.Migrations
+DataAccess:
 
-Web.Api: UPay.Web.Api
-|-> Controllers: UPay.Web.Api.Controllers
-|-> CustomerController
-|-> PaymentController
+Web.Api: 
+  Controllers:
+    - CustomerController
+    - PaymentController
 
-Application: UPay.Application
-|
-|-> BuyerService
-|   |-> BuyerAppService + IBuyerAppService + Dtos
-|-> IdentityVerificationService
-|   |-> IdentityVerificationAppService + IIdentityVerificationService + Dtos
-|
-|-> PaymentService
-|-> PaymentAppService + IPaymentAppService + Dtos
-
-Oh, and also the tests
+Application:
+  Services:
+    Buyer:
+      - BuyerAppService + IBuyerAppService + Dtos
+    IdentityVerificationService:
+      - IdentityVerificationAppService + IIdentityVerificationService + Dtos
+    PaymentService:
+      - PaymentAppService + IPaymentAppService + Dtos
+```
+**Oh, and also the tests!**
 
 3 Docker containers:
 - Web.Api
