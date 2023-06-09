@@ -135,8 +135,8 @@ Project: UPay (United Payment)
 ```yaml
 Domain: 
   Entities:
-    - Customer.cs
-    - Transaction.cs
+    - Customer
+    - Transaction
 
 DataAccess:
 
