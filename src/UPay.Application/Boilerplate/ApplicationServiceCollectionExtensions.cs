@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
-using UPay.Application.Services.IdentityVerification;
 
 namespace UPay.Application.Boilerplate;
 
@@ -12,7 +11,7 @@ public static class ServiceCollectionExtensions
             .Where(c => c.Name.EndsWith("AppService"))
             .AsPublicImplementedInterfaces();
             
-        services.AddTransient<IdentityVerificationAppService>();
+        services.AddTransient<ThirdPartyApiCallHandler>(); // todo: Maybe do it in a better way?
     }
     
     /// <summary>
