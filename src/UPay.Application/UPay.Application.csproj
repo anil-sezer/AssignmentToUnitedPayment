@@ -7,8 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Services\Buyer\Dto\" />
       <Folder Include="Services\IdentityVerification\Dto\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\UPay.DataAccess\UPay.DataAccess.csproj" />
     </ItemGroup>
 
 </Project>
