@@ -17,7 +17,7 @@ public class LoginAsMerchantAppService : AppServiceBase, ILoginAsMerchantAppServ
         _httpClient = httpClient;
     }
 
-    public async Task<MerchantModelFromJwt> LoginAndGetModelAsync()
+    public async Task<MerchantModelFromJwt> LoginAndGetModelAsync() // todo: Store login info at cache, reuse it
     {
         // todo: I should get these secret stuff from Vault
         var requestData = new

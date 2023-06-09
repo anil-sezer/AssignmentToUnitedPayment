@@ -1,0 +1,1 @@
+namespace UPay.Domain.Consts;public static class MemoryCacheKeys // todo: Store login info at cache, reuse it{    public static readonly string LoginToken = nameof(LoginToken);}
