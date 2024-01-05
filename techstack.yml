@@ -1,7 +1,8 @@
 repo_name: anil-sezer/AssignmentToUnitedPayment
 report_id: bb115f93764d423092c9da0516e0e3e5
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-12T12:07:00+00:00'
+timestamp: '2024-01-05T08:48:40+00:00'
 requested_by: anil-sezer
 provider: github
 branch: prod
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -27,6 +29,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/test/UPay.Test.Shared/UPay.Test.Shared.csproj
   detection_source: test/UPay.Test.Shared/UPay.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -41,8 +44,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/6403/default_91fc1f0ee315262794273aa1387eaf8fed8436e6.png
-  detection_source_url: src/UPay.Application/UPay.Application.csproj
-  detection_source: test/UPay.Test.Web.Api/UPay.Test.Web.Api.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Application/UPay.Application.csproj
+  detection_source: src/UPay.Application/UPay.Application.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
 - name: ASP.NET Core
@@ -56,8 +59,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/11331/asp.net-core.png
-  detection_source_url: src/UPay.Application/UPay.Application.csproj
-  detection_source: test/UPay.Test.Web.Api/UPay.Test.Web.Api.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Application/UPay.Application.csproj
+  detection_source: src/UPay.Application/UPay.Application.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
 - name: PostgreSQL
@@ -68,6 +71,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.DataAccess/UPay.DataAccess.csproj
   detection_source: src/UPay.DataAccess/UPay.DataAccess.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -79,6 +83,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment
   detection_source: Repo Metadata
 - name: Moq
   description: The most popular and friendly mocking framework for .NET
@@ -88,6 +93,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/1628/1434934.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/test/UPay.Test.Shared/UPay.Test.Shared.csproj
   detection_source: test/UPay.Test.Shared/UPay.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -99,6 +105,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/test/UPay.Test.Shared/UPay.Test.Shared.csproj
   detection_source: test/UPay.Test.Shared/UPay.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -111,6 +118,7 @@ tools:
   category: Monitoring
   sub_category: Log Management
   image_url: https://img.stackshare.io/service/4283/5691010.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Domain/UPay.Domain.csproj
   detection_source: src/UPay.Domain/UPay.Domain.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -123,6 +131,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/UPay.sln
   detection_source: UPay.sln
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -135,8 +144,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/3077/ca5a327feb49ddfe1f4b11548907e5a1_400x400.png
-  detection_source_url: test/UPay.Test.Application/UPay.Test.Application.csproj
-  detection_source: test/UPay.Test.Web.Api/UPay.Test.Web.Api.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/test/UPay.Test.Application/UPay.Test.Application.csproj
+  detection_source: test/UPay.Test.Application/UPay.Test.Application.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
 - name: JSON Web Token
@@ -148,6 +157,7 @@ tools:
   category: Application Utilities
   sub_category: User Management and Authentication
   image_url: https://img.stackshare.io/service/6417/jwt-icon.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Application/UPay.Application.csproj
   detection_source: src/UPay.Application/UPay.Application.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-09 20:13:31.000000000 Z
@@ -162,7 +172,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13059/default_ed36ff3c005af695725e05bb15ea5b1f03de31f3.png
-  detection_source_url: test/UPay.Test.Shared/UPay.Test.Shared.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/test/UPay.Test.Shared/UPay.Test.Shared.csproj
   detection_source: test/UPay.Test.Shared/UPay.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -177,7 +187,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12852/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: src/UPay.Domain/UPay.Domain.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Domain/UPay.Domain.csproj
   detection_source: src/UPay.Domain/UPay.Domain.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -191,8 +201,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13150/default_81ac985912284073db895b0d26abf3657532a164.png
-  detection_source_url: src/UPay.DataAccess/UPay.DataAccess.csproj
-  detection_source: test/UPay.Test.Shared/UPay.Test.Shared.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.DataAccess/UPay.DataAccess.csproj
+  detection_source: src/UPay.DataAccess/UPay.DataAccess.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-09 12:40:00.000000000 Z
 - name: Newtonsoft.Json
@@ -205,7 +215,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/nuget/image.png
-  detection_source_url: src/UPay.Domain/UPay.Domain.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Domain/UPay.Domain.csproj
   detection_source: src/UPay.Domain/UPay.Domain.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -219,7 +229,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13194/default_18a92235046d8c8db548cd22b87cf5792dc31759.png
-  detection_source_url: src/UPay.Domain/UPay.Domain.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Domain/UPay.Domain.csproj
   detection_source: src/UPay.Domain/UPay.Domain.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -233,7 +243,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13071/default_0af6f5844ebd9062a9a4895d909753dc8447f2f3.png
-  detection_source_url: src/UPay.Domain/UPay.Domain.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Domain/UPay.Domain.csproj
   detection_source: src/UPay.Domain/UPay.Domain.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -247,7 +257,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12981/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: src/UPay.Web.Api/UPay.Web.Api.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Web.Api/UPay.Web.Api.csproj
   detection_source: src/UPay.Web.Api/UPay.Web.Api.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
@@ -261,7 +271,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12920/default_e43fb8cd51d87352a1197706afa527de5c3baecd.png
-  detection_source_url: src/UPay.Application/UPay.Application.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/src/UPay.Application/UPay.Application.csproj
   detection_source: src/UPay.Application/UPay.Application.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-09 20:13:31.000000000 Z
@@ -275,7 +285,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13260/default_d2db5a200c4fe2d08cbdb2174cc230708973870b.png
-  detection_source_url: test/UPay.Test.Application/UPay.Test.Application.csproj
-  detection_source: test/UPay.Test.Web.Api/UPay.Test.Web.Api.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToUnitedPayment/blob/prod/test/UPay.Test.Application/UPay.Test.Application.csproj
+  detection_source: test/UPay.Test.Application/UPay.Test.Application.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-08 18:28:51.000000000 Z
