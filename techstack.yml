@@ -2,7 +2,7 @@ repo_name: anil-sezer/AssignmentToUnitedPayment
 report_id: bb115f93764d423092c9da0516e0e3e5
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:48:40+00:00'
+timestamp: '2024-02-29T18:40:30+00:00'
 requested_by: anil-sezer
 provider: github
 branch: prod
@@ -275,6 +275,19 @@ tools:
   detection_source: src/UPay.Application/UPay.Application.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-09 20:13:31.000000000 Z
+  vulnerabilities:
+  - name: Microsoft Identity Denial of service vulnerability
+    cve_id: CVE-2024-21319
+    cve_url: https://github.com/advisories/GHSA-8g9c-28fc-mcx2
+    detected_date: Jan 10
+    severity: moderate
+    first_patched: 6.34.0
+  - name: 'Microsoft Security Advisory CVE-2024-21319: .NET Denial of Service Vulnerability'
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-59j7-ghrg-fj52
+    detected_date: Jan 10
+    severity: moderate
+    first_patched: 6.34.0
 - name: xunit.runner.visualstudio
   description: Visual Studio 2012+ Test Explorer runner for the xUnit.net framework
   package_url: https://www.nuget.org/xunit.runner.visualstudio
